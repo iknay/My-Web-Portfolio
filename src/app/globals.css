@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --background: #ffffff;
+  --foreground: #282828;
+  color: var(--foreground);
+}
+
+[data-theme="dark"] {
+  --background: #282828;
+  --foreground: #ffffff;
+  color: var(--foreground);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: "Inter", Helvetica;
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
