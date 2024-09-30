@@ -6,10 +6,13 @@ import profile from "@/assets/images/mypic.png";
 import { Button } from "@/components/ui/Button";
 import WorkExperience from "@/components/customs/WorkExperience";
 import { Cover } from "@/components/ui/Cover";
-import IconCloud from "@/components/ui/IconCloud";
-import { SkillsSlugs } from "@/lib/lang/SkillsLang";
+import { MoveRight } from "lucide-react";
+import { Marquee } from "@/components/ui/Marquee";
+import { SkillIcons } from "@/assets/icons/skillicons";
 
 export default function Home() {
+  const firstRow = SkillIcons.slice(0, SkillIcons.length / 2);
+  const secondRow = SkillIcons.slice(SkillIcons.length / 2);
   return (
     <div className="flex flex-col gap-16">
       <header>
@@ -39,10 +42,45 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="skills">
-        <h2 className="text-5xl font-semibold">Skills</h2>
-        <div></div>
-        <IconCloud iconSlugs={SkillsSlugs} />
+      <section
+        id="skills"
+        className="flex flex-col gap-10 items-center justify-center h-full rounded-3xl py-16 relative overflow-hidden"
+      >
+        <div className=" flex flex-col gap-4 items-center justify-center">
+          <h2 className="text-4xl font-bold">Bringing Designs to Life</h2>
+          <p>
+            Translating designs into dynamic, user-friendly interfaces using
+            modern front-end frameworks and tools.
+          </p>
+          <Button
+            variant="link"
+            className="px-4 underline font-semibold text-sm flex gap-2 dark:text-white"
+          >
+            View my resume
+            <MoveRight className="w-4 h-4 underline" />
+          </Button>
+        </div>
+
+        <div
+          className="w-full"
+          style={{
+            maskImage:
+              "linear-gradient(to right, transparent, black 30%, black 30%, transparent)",
+            WebkitMaskImage:
+              "linear-gradient(to right, transparent, black 30%, black 30%, transparent)",
+          }}
+        >
+          <Marquee className="[--duration:30s]">
+            {firstRow.map((skill) => (
+              <div key={skill.name}>{skill.icon({ className: "size-56" })}</div>
+            ))}
+          </Marquee>
+          <Marquee reverse className="[--duration:30s]">
+            {secondRow.map((skill) => (
+              <div key={skill.name}>{skill.icon({ className: "size-56" })}</div>
+            ))}
+          </Marquee>
+        </div>
       </section>
     </div>
   );
