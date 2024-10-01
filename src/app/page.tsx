@@ -9,6 +9,7 @@ import { Cover } from "@/components/ui/Cover";
 import { MoveRight } from "lucide-react";
 import { Marquee } from "@/components/ui/Marquee";
 import { SkillIcons } from "@/assets/icons/skillicons";
+import SparklesText from "@/components/ui/SparklesText";
 
 export default function Home() {
   const firstRow = SkillIcons.slice(0, SkillIcons.length / 2);
@@ -47,7 +48,11 @@ export default function Home() {
         className="flex flex-col gap-10 items-center justify-center h-full rounded-3xl py-16 relative overflow-hidden"
       >
         <div className=" flex flex-col gap-4 items-center justify-center">
-          <h2 className="text-4xl font-bold">Bringing Designs to Life</h2>
+          <SparklesText
+            text="Bringing Designs to Life"
+            className="text-4xl font-inter font-semibold"
+            sparklesCount={6}
+          />
           <p>
             Translating designs into dynamic, user-friendly interfaces using
             modern front-end frameworks and tools.

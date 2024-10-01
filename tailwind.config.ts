@@ -49,6 +49,9 @@ const config: Config = {
       fontSize: {
         xxs: "0.656rem",
       },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
     },
   },
   plugins: [animate],
