@@ -4,6 +4,7 @@ import React from "react";
 import { Youtube, Bookmark, Ellipsis } from "lucide-react";
 import { Separator } from "../ui/Separator";
 import { Icon } from "@/assets/icons";
+
 const ExperienceCard = () => {
   return (
     <div className="space-y-4">
@@ -24,9 +25,11 @@ const ExperienceCard = () => {
               <p className="text-accent2 dark:text-white text-xxs">
                 {item.startDate} - {item.endDate}
               </p>
-              <p className="line-clamp-1 text-accent2 dark:text-white text-xxs">
+
+              <p className=" text-accent2 dark:text-white text-xxs">
                 {item.description}
               </p>
+
               <div className="flex items-center gap-2.5">
                 <Icon.PlayRounded className="size-6" />
                 <Bookmark className="size-3.5 text-accent2 dark:text-white" />
