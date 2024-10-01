@@ -14,7 +14,7 @@ export default function Home() {
   const firstRow = SkillIcons.slice(0, SkillIcons.length / 2);
   const secondRow = SkillIcons.slice(SkillIcons.length / 2);
   return (
-    <div className="flex flex-col gap-15">
+    <div className="flex flex-col gap-16">
       <header>
         <p className={cn("text-secondary text-start text-4xl font-bold")}>
           yancee.
