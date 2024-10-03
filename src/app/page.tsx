@@ -117,7 +117,16 @@ export default function Home() {
             Translating designs into dynamic, user-friendly interfaces using
             modern front-end frameworks and tools.
           </p>
-          <button className="px-4 font-semibold text-sm flex gap-2 dark:text-white group relative">
+          <button
+            onClick={() => {
+              window.open(
+                "https://drive.google.com/file/d/1xAFVWguN4ch2S4_FvLmbjdxCldFlAdPo/view?usp=sharing",
+                "_blank",
+                "noopener,noreferrer"
+              );
+            }}
+            className="px-4 font-semibold text-sm flex gap-2 dark:text-white group relative"
+          >
             <span className="relative">
               View my resume 👩‍💻
               <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-pink-200 transition-all duration-300 group-hover:w-full"></span>
