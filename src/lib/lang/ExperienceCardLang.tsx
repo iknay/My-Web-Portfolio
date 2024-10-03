@@ -30,7 +30,7 @@ export const WorkExperienceLang = {
       startDate: "August ‘22",
       endDate: "Nov ‘22",
       description:
-        "I created responsive and engaging front-end solutions for a gaming platform using React.js, TypeScript, and Tailwind CSS, while collaborating in an Agile-SCRUM environment to improve project performance by 25%.",
+        "I managed front-end tasks using React.js and Tailwind CSS, collaborating with the lead developer to implement an admin dashboard for kiosks and conducting quality assurance to ensure optimal performance.",
     },
   ],
 };

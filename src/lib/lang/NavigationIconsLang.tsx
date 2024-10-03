@@ -56,22 +56,22 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "#",
+        url: "https://github.com/iknay",
         icon: Icons.github,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "#",
+        url: "https://linkedin.com/in/yancee",
         icon: Icons.linkedin,
       },
       Instagram: {
         name: "Instagram",
-        url: "#",
+        url: "https://instagram.com/eecnayy",
         icon: Icons.instagram,
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:yanceeavillanueva@gmail.com",
         icon: Icons.email,
       },
     },

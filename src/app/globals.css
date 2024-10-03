@@ -32,3 +32,32 @@ body {
     text-wrap: balance;
   }
 }
+
+.custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: url(#round);
+}
+
+.custom::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--foreground);
+  clip-path: polygon(
+    36.4% 0.5%,
+    65.8% 21.5%,
+    100% 22.5%,
+    100.1% 100.3%,
+    12.2% 99%,
+    7.9% 62.8%,
+    0% 51.8%,
+    0% 0%
+  );
+}

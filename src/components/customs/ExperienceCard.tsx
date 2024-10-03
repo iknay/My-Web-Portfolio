@@ -18,25 +18,25 @@ const ExperienceCard = () => {
             />
 
             <div className="flex flex-col gap-2">
-              <p className="flex gap-2 items-center text-xs font-semibold">
-                <Youtube className="size-4" color="#898989" />#{item.title} -{" "}
-                {item.company}
+              <p className="flex gap-2 items-center text-sm font-semibold">
+                <Youtube className="size-4 text-primary dark:text-white" />#
+                {item.title} - {item.company}
               </p>
-              <p className="text-accent2 dark:text-white text-xxs">
+              <p className="text-primary dark:text-white text-xs">
                 {item.startDate} - {item.endDate}
               </p>
 
-              <p className=" text-accent2 dark:text-white text-xxs">
+              <p className=" text-primary dark:text-white text-xs">
                 {item.description}
               </p>
 
               <div className="flex items-center gap-2.5">
                 <Icon.PlayRounded className="size-6" />
-                <Bookmark className="size-3.5 text-accent2 dark:text-white" />
-                <Icon.AddToPlaylist className="size-3.5 stroke-accent2 dark:stroke-white" />
-                <Icon.Download className="size-3.5 stroke-accent2 dark:stroke-white" />
-                <Icon.Share className="size-3.5 stroke-accent2 dark:stroke-white" />
-                <Ellipsis className="size-3.5 stroke-accent2 dark:stroke-white" />
+                <Bookmark className="size-3.5 text-primary dark:text-white" />
+                <Icon.AddToPlaylist className="size-3.5 stroke-primary dark:stroke-white" />
+                <Icon.Download className="size-3.5 stroke-primary dark:stroke-white" />
+                <Icon.Share className="size-3.5 stroke-primary dark:stroke-white" />
+                <Ellipsis className="size-3.5 stroke-primary dark:stroke-white" />
               </div>
             </div>
           </div>
