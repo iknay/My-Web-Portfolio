@@ -1,5 +1,5 @@
 "use client";
-import { HomeIcon, PencilIcon, CalendarIcon, MailIcon } from "lucide-react";
+import { HomeIcon, CalendarIcon, MailIcon } from "lucide-react";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
@@ -50,7 +50,7 @@ export const Icons = {
 export const DATA = {
   navbar: [
     { href: "#", icon: HomeIcon, label: "Home" },
-    { href: "#", icon: PencilIcon, label: "Blog" },
+    // { href: "#", icon: PencilIcon, label: "Blog" },
   ],
   contact: {
     social: {
